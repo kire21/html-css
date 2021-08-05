@@ -3,6 +3,7 @@
   --color-darkblue: rgb(27, 27, 50);
   --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
   --color-green: rgb(55, 175, 101);
+  --color-focus-border-dogerblue: rgb(0, 117, 255);
 }
 
 *,
@@ -116,6 +117,10 @@ input {
   outline: none;
 }
 
+.input--text:focus {
+  border: 2px solid var(--color-focus-border-dogerblue);
+}
+
 #dropdown {
   width: 100%;
   background: var(--color-white);
@@ -124,6 +129,10 @@ input {
   border-radius: 5px;
   border: none;
   outline: none;
+}
+
+#dropdown:focus {
+  border: 2px solid var(--color-focus-border-dogerblue);
 }
 
 .radio--label {
@@ -190,4 +199,5 @@ input {
 
   .btn {
     font-size: 1.8rem;
+  }
 }
