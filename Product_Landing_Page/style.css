@@ -39,14 +39,12 @@ a {
   color: var(--color-black);
 }
 
-#header {
-  width: 100vw;
+.header {
   display: flex;
   flex-wrap: wrap;
   min-height: 75px;
   position: fixed;
   top: 0;
-  justify-items: center;
   align-items: center;
   text-align: center;
   background-color: var(--color-whitesmoke);
@@ -55,7 +53,7 @@ a {
 #header__img {
   width: 100%;
   max-width: 300px;
-  transform: translateY(-4px);
+  transform: translateY(-8px);
 }
 
 .nav__list {
@@ -68,20 +66,20 @@ a {
 }
 
 @media screen and (min-width: 678px) {
-  #header {
+  .header {
     flex-wrap: nowrap;
   }
 
   .logo {
     width: 60vw;
     display: flex;
-    margin-top: -0.4rem;
     margin-left: 4rem;
   }
 
   .nav__list {
     width: 35vw;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     margin-right: 2.5rem;
   }
